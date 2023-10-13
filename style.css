@@ -1,0 +1,1783 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* FF{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+} */
+.header{
+    display: flex;
+    min-height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+    /* position: fixed; */
+    background-color: #ffffff;
+}
+.logo{
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+.list ul{
+    text-decoration: none;
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+.lsit ul li{
+    position: relative;
+}
+.list li a{
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #8a7789;
+    transition: ease-out 300ms;
+}
+.list ul li a:hover{
+    text-decoration: none;
+}
+.dropdown{
+    display: none;
+    margin-top: 3rem;
+}
+.list ul li:hover .dropdown{
+    display: block;
+    position: absolute; 
+    background-color: #b08dad;
+    transition: ease 0.3ms;
+}
+.list ul li:hover .dropdown ul{
+    display: block;
+    margin: 0.625rem;
+}
+.list ul li:hover .dropdown ul li{
+    width: 8.5rem;
+    padding: 0.625rem;
+}
+.dropdown ul li a{
+    color: white;
+    font-size: 0.9rem;
+    text-wrap: nowrap;
+    font-family: 'Rubik', sans-serif;
+}
+.icons{
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+}
+.page1{
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+.page1-con{
+    width: 20rem;
+    height: 40rem;
+    left: -10rem;
+    position: absolute;
+    margin-top: 10rem;
+    background-color: #b08dad;
+}
+.page1-img{
+    margin-left: 6rem;
+
+}
+.banner{
+    position: absolute;
+    bottom: 22.8%;
+    margin-right: 3rem;
+}
+.page1-text{
+    position: relative;
+    margin-left: 24rem;
+}
+.page1-text-h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    color: #4b3049;
+    width: 25rem;
+}
+.page1-text-p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    color: #b08dad;
+}
+.page1-btn{
+    padding: 1.2rem 3rem;
+    margin-top: 2rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #b08dad;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.page1-btn:hover{
+    background-color: #fff;
+    color: #b08dad;
+    border: 0.1rem solid #b08dad;
+    transition: ease-out 0.3s;
+}
+.page2{
+    max-width: 100vw;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.page2-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+.page2-con{
+    width: 25rem;
+    height: 30rem;
+    background-color: #b08dad;
+}
+.product1{
+    position: relative;
+    margin-top: -33rem;
+    margin-left: 2rem;
+}
+.page2-p{
+    font-family: 'Poppins', sans-serif;
+    color: #b08dad;
+    font-size: 1.2rem;
+}
+.page2-h3{
+    color: #4b3049;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    width: 28rem;
+    padding-top: 1rem;
+}
+.page2-btn{
+    padding: 1.2rem 1.8rem;
+    margin-top: 2.5rem;
+    color: #b08dad;
+    border: 0.1rem solid #b08dad;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.page2-btn:hover{
+    background-color:#b08dad;
+    color: white;
+    border: none;
+    transition: ease-out 0.3s;
+}
+.page3{
+    max-width: 100vw;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.page3-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 8rem;
+    margin-top: 6rem;
+}
+.page3-con{
+    width: 25rem;
+    height: 30rem;
+    background-color: #b08dad;
+    margin-left: 13rem;
+}
+.product2{
+    position: relative;
+    margin-top: -33rem;
+    margin-left: 2rem;
+}
+.page3-p{
+    font-family: 'Poppins', sans-serif;
+    color: #b08dad;
+    font-size: 1.2rem;
+}
+.page3-h3{
+    color: #4b3049;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    width: 28rem;
+    padding-top: 1rem;
+}
+.page3-btn{
+    padding: 1.2rem 1.8rem;
+    margin-top: 2.5rem;
+    color: #b08dad;
+    border: 0.1rem solid #b08dad;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.page3-btn:hover{
+    background-color:#b08dad;
+    color: white;
+    border: none;
+    transition: ease-out 0.3s;
+}
+.page3{
+    max-width: 100vw;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+.page4-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 6rem;
+    padding-bottom: 12rem;
+}
+.page4-con{
+    width: 25rem;
+    height: 30rem;
+    background-color: #b08dad;
+}
+.product3{
+    position: relative;
+    margin-top: -33rem;
+    margin-left: 2rem;
+}
+.page4-p{
+    font-family: 'Poppins', sans-serif;
+    color: #b08dad;
+    font-size: 1.2rem;
+}
+.page4-h3{
+    color: #4b3049;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    width: 28rem;
+    padding-top: 1rem;
+}
+.page4-btn{
+    padding: 1.2rem 1.8rem;
+    margin-top: 2.5rem;
+    color: #b08dad;
+    border: 0.1rem solid #b08dad;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.page4-btn:hover{
+    background-color:#b08dad;
+    color: white;
+    border: none;
+    transition: ease-out 0.3s;
+}
+.page5{
+    width: 100%;
+    background-color: #f4edf2;
+}
+.page5-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+.page5-h1{
+    color: #4b3049;
+    text-align: center;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 8rem;
+}
+.page5-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 6rem;
+}
+.page5-h3{
+    padding-top: 1rem;
+    color: #4b3049;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    width: 22rem;
+    cursor: pointer;
+}
+.page5-h3:hover{
+    color: #b08dad;
+    transition: ease 0.3s;
+}
+.page5-p{
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    font-family: 'Rubik', sans-serif;
+    color: #785376;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.page6{
+    width: 100%;
+    height: 40vh;
+    background-color: #b08dad;
+    padding-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.page6-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 3rem;
+}
+.circle{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    border: 0.1rem solid #785376;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #785376;
+    margin-top: 3rem;
+}
+.circle:hover{
+    background-color: #785376;
+    color: white;
+}
+.circl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page6-img{
+    width: 8rem;
+    height: 8rem;
+}
+.circle1{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    display: flex;
+    position: relative;
+    margin-left: 6rem;
+    margin-top: -3rem;
+    align-items: center;
+    background-color: #e4d3df;
+    justify-content: center;
+}
+.page6-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page6-h4{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 47rem;
+    padding-top: 2rem;
+}
+.page6-p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    padding-top: 1.5rem;
+}
+.page7{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page7-content{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8rem;
+}
+.page7-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+.page7-h3{
+    color: #4b3049;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    width: 34rem;
+}
+.page7-p{
+    font-family: 'Rubik', sans-serif;
+    width: 30rem;
+    line-height: 2;
+    margin-top: -3rem;
+}
+.page7-boxes{
+    display: flex;
+    gap: 2rem;
+}
+.box{
+    width: 16rem;
+    height: 10rem;
+    border-radius: 0.25rem;
+    border: 0.1rem solid #e4d3df;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.box-h4{
+    color: #4b3049;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+.page8{
+    width: 100vw;
+    height: 50vh;
+    background-color: #4b3049;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.page8-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page8-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.page8-h1{
+    font-size: 3rem;
+}
+.page8-p{
+    font-family: 'Rubik', sans-serif;
+    width: 50rem;
+    line-height: 2;
+}
+input{
+    width: 34rem;
+    height: 4rem;
+    padding: 0 4%;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    border-radius: 14rem;
+    background-color: #4b3049;
+    color: whitesmoke;
+    border: 0.1rem solid white;
+}
+.page8-btn{
+    position: absolute;
+    margin-bottom: -8.5rem;
+    margin-left: 24.5rem;
+    padding: 1.2rem 2.5rem;
+    margin-top: 2.5rem;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    background-color: #b08dad;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.page8-btn:hover{
+    color:#b08dad;
+    background-color: white;
+    border: 0.1rem solid #b08dad;
+    transition: ease-out 0.3s;
+}
+.page9{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page9-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16rem;
+}
+.page9-LHS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.list-1 ul{
+    text-decoration: none;
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+.lsit-1 ul li{
+    position: relative;
+}
+.list-1 li a{
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #8a7789;
+    transition: ease-out 300ms;
+}
+.list-1 ul li a:hover{
+    color: #e4d3df;
+    text-decoration: none;
+}
+.page9-RHS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+.circle-2{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b3049;
+    cursor: pointer;
+}
+.circle-2:hover{
+    background-color: #e4d3df;
+}
+.page9 img{
+    cursor: pointer;
+}
+.footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #e4d3df;
+    color: #4b3049;
+    gap: 8rem;
+}
+.footer-right{
+    display: flex;
+    gap: 3rem;
+}
+.footter-p{
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+@media (max-width:1200px){
+    .header{
+        display: flex;
+        min-height: 10vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 2rem;
+        /* position: fixed; */
+        background-color: #ffffff;
+    }
+    .logo{
+        cursor: pointer;
+        font-family: 'Rubik', sans-serif;
+    }
+    .list ul{
+        text-decoration: none;
+        display: flex;
+        list-style-type: none;
+        gap: 2rem;
+    }
+    .lsit ul li{
+        position: relative;
+    }
+    .list li a{
+        font-size: 1rem;
+        font-family: 'Rubik', sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        color: #8a7789;
+        transition: ease-out 300ms;
+    }
+    .list ul li a:hover{
+        text-decoration: none;
+    }
+    .dropdown{
+        display: none;
+        margin-top: 3rem;
+    }
+    .list ul li:hover .dropdown{
+        display: block;
+        position: absolute; 
+        background-color: #b08dad;
+        transition: ease 0.3ms;
+    }
+    .list ul li:hover .dropdown ul{
+        display: block;
+        margin: 0.625rem;
+    }
+    .list ul li:hover .dropdown ul li{
+        width: 8.5rem;
+        padding: 0.625rem;
+    }
+    .dropdown ul li a{
+        color: white;
+        font-size: 0.9rem;
+        text-wrap: nowrap;
+        font-family: 'Rubik', sans-serif;
+    }
+    .icons{
+        display: flex;
+        gap: 2rem;
+        cursor: pointer;
+    }
+    .page1{
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 8rem;
+        gap: 24rem;
+    }
+    .page1-con{
+        display: none;
+        width: 20rem;
+        height: 40rem;
+        left: -10rem;
+        position: absolute;
+        margin-top: 10rem;
+        background-color: #b08dad;
+    }
+    .page1-img{
+        width: 40rem;
+        height: 30rem;
+        margin-left: -10rem;
+    
+    }
+    .banner{
+        position: absolute;
+        bottom: 45%;
+        margin-right: 3rem;
+    }
+    .page1-text{
+        position: relative;
+        margin-left: 2rem;
+    }
+    .page1-text-h1{
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        color: #4b3049;
+        width: 25rem;
+    }
+    .page1-text-p{
+        width: 30rem;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.2rem;
+        color: #b08dad;
+    }
+    .page1-btn{
+        padding: 1.2rem 3rem;
+        margin-top: 2rem;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: #b08dad;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .page1-btn:hover{
+        background-color: #fff;
+        color: #b08dad;
+        border: 0.1rem solid #b08dad;
+        transition: ease-out 0.3s;
+    }
+    .page2{
+        max-width: 100vw;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .page2-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16rem;
+    }
+    .page2-con{
+        width: 25rem;
+        height: 30rem;
+        background-color: #b08dad;
+    }
+    .product1{
+        width: 30rem;
+        height: 25rem;
+        position: absolute;
+        margin-top: -28rem;
+        margin-left: 2rem;
+    }
+    .page2-p{
+        font-family: 'Poppins', sans-serif;
+        color: #b08dad;
+        font-size: 1.2rem;
+    }
+    .page2-h3{
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        width: 25rem;
+        padding-top: 1rem;
+    }
+    .page2-btn{
+        padding: 1.2rem 1.8rem;
+        margin-top: 2.5rem;
+        color: #b08dad;
+        border: 0.1rem solid #b08dad;
+        border-radius: 0.5rem;
+        background-color: white;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .page2-btn:hover{
+        background-color:#b08dad;
+        color: white;
+        border: none;
+        transition: ease-out 0.3s;
+    }
+    .page3{
+        max-width: 100vw;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .page3-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 4rem;
+    }
+    .page3-con{
+        width: 25rem;
+        height: 30rem;
+        background-color: #b08dad;
+    }
+    .product2{
+        width: 30rem;
+        height: 25rem;
+        position: absolute;
+        margin-top: -28rem;
+        margin-left: 6rem;
+    }
+    .page3-p{
+        font-family: 'Poppins', sans-serif;
+        color: #b08dad;
+        font-size: 1.2rem;
+    }
+    .page3-h3{
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        width: 25rem;
+        padding-top: 1rem;
+    }
+    .page3-btn{
+        padding: 1.2rem 1.8rem;
+        margin-top: 2.5rem;
+        color: #b08dad;
+        border: 0.1rem solid #b08dad;
+        border-radius: 0.5rem;
+        background-color: white;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .page3-btn:hover{
+        background-color:#b08dad;
+        color: white;
+        border: none;
+        transition: ease-out 0.3s;
+    }
+    .page4{
+        max-width: 100vw;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .page4-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16rem;
+    }
+    .page4-con{
+        width: 25rem;
+        height: 30rem;
+        background-color: #b08dad;
+    }
+    .product3{
+        width: 30rem;
+        height: 25rem;
+        position: absolute;
+        margin-top: -28rem;
+        margin-left: 2rem;
+    }
+    .page4-p{
+        font-family: 'Poppins', sans-serif;
+        color: #b08dad;
+        font-size: 1.2rem;
+    }
+    .page4-h3{
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        width: 25rem;
+        padding-top: 1rem;
+    }
+    .page4-btn{
+        padding: 1.2rem 1.8rem;
+        margin-top: 2.5rem;
+        color: #b08dad;
+        border: 0.1rem solid #b08dad;
+        border-radius: 0.5rem;
+        background-color: white;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .page4-btn:hover{
+        background-color:#b08dad;
+        color: white;
+        border: none;
+        transition: ease-out 0.3s;
+    }
+    .page5{
+        width: 100%;
+        background-color: #f4edf2;
+    }
+    .page5-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+    .page5-h1{
+        color: #4b3049;
+        text-align: center;
+        /* font-family: 'Poppins', sans-serif; */
+        font-size: 2.5rem;
+        font-weight: bolder;
+        margin-top: 8rem;
+    }
+    .page5-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        margin-top: 6rem;
+    }
+    .page5-h3{
+        padding-top: 1rem;
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        width: 22rem;
+        cursor: pointer;
+    }
+    .page5-h3:hover{
+        color: #b08dad;
+        transition: ease 0.3s;
+    }
+    .page5-p{
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+        font-family: 'Rubik', sans-serif;
+        color: #785376;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+    .img1{
+        width: 20rem;
+        height: 15rem;
+    }
+    .page7{
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page7-content{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8rem;
+    }
+    .page7-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+    }
+    .page7-h3{
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        width: 34rem;
+    }
+    .page7-p{
+        font-family: 'Rubik', sans-serif;
+        width: 30rem;
+        line-height: 2;
+        margin-top: -3rem;
+    }
+    .page7-boxes{
+        display: flex;
+        gap: 2rem;
+    }
+    .box{
+        width: 16rem;
+        height: 10rem;
+        border-radius: 0.25rem;
+        border: 0.1rem solid #e4d3df;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .box-h4{
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+    }
+    .page8{
+        width: 100vw;
+        height: 50vh;
+        background-color: #4b3049;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .page8-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .page8-text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .page8-h1{
+        font-size: 2.5rem;
+    }
+    .page8-p{
+        font-family: 'Rubik', sans-serif;
+        width: 50rem;
+        line-height: 2;
+    }
+    input{
+        width: 30rem;
+        height: 4rem;
+        padding: 0 4%;
+        outline: none;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1rem;
+        margin-top: 2.5rem;
+        border-radius: 14rem;
+        background-color: #4b3049;
+        color: whitesmoke;
+        border: 0.1rem solid white;
+    }
+    .page8-btn{
+        position: absolute;
+        margin-bottom: -8rem;
+        margin-left: 21.5rem;
+        padding: 1.2rem 2rem;
+        margin-top: 2.5rem;
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        background-color: #b08dad;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        font-size: 0.8rem;
+    }
+    .page8-btn:hover{
+        color:#b08dad;
+        background-color: white;
+        border: 0.1rem solid #b08dad;
+        transition: ease-out 0.3s;
+    }
+    .page9{
+        width: 100vw;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page9-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 8rem;
+    }
+    .page9-LHS{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* gap: 4rem; */
+    }
+    .list-1 ul{
+        text-decoration: none;
+        display: flex;
+        list-style-type: none;
+        gap: 2rem;
+    }
+    .lsit-1 ul li{
+        position: relative;
+    }
+    .list-1 li a{
+        font-size: 1.1rem;
+        font-family: 'Rubik', sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        color: #8a7789;
+        transition: ease-out 300ms;
+    }
+    .list-1 ul li a:hover{
+        color: #e4d3df;
+        text-decoration: none;
+    }
+    .page9-RHS{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.25rem;
+    }
+    .circle-2{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #4b3049;
+        cursor: pointer;
+    }
+    .circle-2:hover{
+        background-color: #e4d3df;
+    }
+    .page9 img{
+        cursor: pointer;
+    }
+}
+
+
+
+@media (max-width:996px){
+    .header{
+        display: flex;
+        min-height: 10vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+        /* padding: 2rem 2rem; */
+        /* position: fixed; */
+        background-color: #ffffff;
+    }
+    .logo{
+        cursor: pointer;
+        font-family: 'Rubik', sans-serif;
+    }
+    .list ul{
+        text-decoration: none;
+        display: flex;
+        list-style-type: none;
+        gap: 2rem;
+    }
+    .lsit ul li{
+        position: relative;
+    }
+    .list li a{
+        text-wrap: nowrap;
+        font-size: 1rem;
+        font-family: 'Rubik', sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        color: #8a7789;
+        transition: ease-out 300ms;
+    }
+    .list ul li a:hover{
+        text-decoration: none;
+    }
+    .dropdown{
+        display: none;
+        margin-top: 3rem;
+    }
+    .list ul li:hover .dropdown{
+        display: block;
+        position: absolute; 
+        background-color: #b08dad;
+        transition: ease 0.3ms;
+    }
+    .list ul li:hover .dropdown ul{
+        display: block;
+        margin: 0.625rem;
+    }
+    .list ul li:hover .dropdown ul li{
+        width: 8.5rem;
+        padding: 0.625rem;
+    }
+    .dropdown ul li a{
+        color: white;
+        font-size: 0.9rem;
+        text-wrap: nowrap;
+        font-family: 'Rubik', sans-serif;
+    }
+    .icons{
+        display: flex;
+        gap: 2rem;
+        cursor: pointer;
+    }
+    .page1{
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 8rem;
+        gap: 2rem;
+    }
+    .page1-con{
+        display: none;
+        width: 20rem;
+        height: 40rem;
+        left: -10rem;
+        position: absolute;
+        margin-top: 10rem;
+        background-color: #b08dad;
+    }
+    .page1-img{
+        width: 30rem;
+        height: 25rem;
+        margin-left: -2rem;
+    
+    }
+    .banner{
+        position: absolute;
+        bottom: 55%;
+        margin-right: 2rem;
+    }
+    .page1-text{
+        position: relative;
+        margin-left: 4rem;
+    }
+    .page1-text-h1{
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        color: #4b3049;
+        width: 25rem;
+    }
+    .page1-text-p{
+        width: 30rem;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.2rem;
+        color: #b08dad;
+    }
+    .page1-btn{
+        padding: 1.2rem 3rem;
+        margin-top: 2rem;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: #b08dad;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .page1-btn:hover{
+        background-color: #fff;
+        color: #b08dad;
+        border: 0.1rem solid #b08dad;
+        transition: ease-out 0.3s;
+    }
+    .page2{
+        max-width: 100vw;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .page2-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12rem;
+    }
+    .page2-con{
+        width: 20rem;
+        height: 25rem;
+        background-color: #b08dad;
+    }
+    .product1{
+        width: 25rem;
+        height: 20rem;
+        position: absolute;
+        margin-top: -23rem;
+        margin-left: 2rem;
+    }
+    .page2-RHS{
+        margin-right: -4rem;
+    }
+    .page2-p{
+        font-family: 'Poppins', sans-serif;
+        color: #b08dad;
+        font-size: 1.2rem;
+    }
+    .page2-h3{
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        width: 25rem;
+        padding-top: 1rem;
+    }
+    .page2-btn{
+        padding: 1.2rem 1.8rem;
+        margin-top: 2.5rem;
+        color: #b08dad;
+        border: 0.1rem solid #b08dad;
+        border-radius: 0.5rem;
+        background-color: white;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .page2-btn:hover{
+        background-color:#b08dad;
+        color: white;
+        border: none;
+        transition: ease-out 0.3s;
+    }
+    .page3{
+        max-width: 100vw;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .page3-content{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .page3-con{
+        width: 20rem;
+        height: 25rem;
+        background-color: #b08dad;
+    }
+    .product2{
+        width: 25rem;
+        height: 20rem;
+        position: absolute;
+        margin-top: -23rem;
+        margin-left: 6rem;
+    }
+    .page3-LHS{
+        margin-left: -6rem;
+    }
+    .page3-p{
+        font-family: 'Poppins', sans-serif;
+        color: #b08dad;
+        font-size: 1.2rem;
+    }
+    .page3-h3{
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        width: 25rem;
+        padding-top: 1rem;
+    }
+    .page3-btn{
+        padding: 1.2rem 1.8rem;
+        margin-top: 2.5rem;
+        color: #b08dad;
+        border: 0.1rem solid #b08dad;
+        border-radius: 0.5rem;
+        background-color: white;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .page3-btn:hover{
+        background-color:#b08dad;
+        color: white;
+        border: none;
+        transition: ease-out 0.3s;
+    }
+    .page4{
+        max-width: 100vw;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .page4-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12rem;
+    }
+    .page4-con{
+        width: 20rem;
+        height: 25rem;
+        background-color: #b08dad;
+    }
+    .product3{
+        width: 25rem;
+        height: 20rem;
+        position: absolute;
+        margin-top: -23rem;
+        margin-left: 2rem;
+    }
+    .page4-RHS{
+        margin-right: -4rem;
+    }
+    .page4-p{
+        font-family: 'Poppins', sans-serif;
+        color: #b08dad;
+        font-size: 1.2rem;
+    }
+    .page4-h3{
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        width: 25rem;
+        padding-top: 1rem;
+    }
+    .page4-btn{
+        padding: 1.2rem 1.8rem;
+        margin-top: 2.5rem;
+        color: #b08dad;
+        border: 0.1rem solid #b08dad;
+        border-radius: 0.5rem;
+        background-color: white;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .page4-btn:hover{
+        background-color:#b08dad;
+        color: white;
+        border: none;
+        transition: ease-out 0.3s;
+    }
+    .page5{
+        width: 100%;
+        background-color: #f4edf2;
+    }
+    .page5-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+    .page5-h1{
+        color: #4b3049;
+        text-align: center;
+        /* font-family: 'Poppins', sans-serif; */
+        font-size: 2rem;
+        font-weight: bolder;
+        margin-top: 8rem;
+    }
+    .page5-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.25rem;
+        margin-top: 6rem;
+    }
+    .page5-h3{
+        padding-top: 1rem;
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        width: 20rem;
+        cursor: pointer;
+    }
+    .page5-h3:hover{
+        color: #b08dad;
+        transition: ease 0.3s;
+    }
+    .page5-p{
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+        font-family: 'Rubik', sans-serif;
+        color: #785376;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+    .img1{
+        width: 15rem;
+        height: 10rem;
+    }
+    .page6{
+        width: 100%;
+        height: 40vh;
+        background-color: #b08dad;
+        padding-bottom: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .page6-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+    .circle{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 1.25rem;
+        border: 0.1rem solid #785376;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #785376;
+        margin-top: 3rem;
+    }
+    .circle:hover{
+        background-color: #785376;
+        color: white;
+    }
+    .circl{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page6-img{
+        width: 6rem;
+        height: 6rem;
+    }
+    .circle1{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        display: flex;
+        position: relative;
+        margin-left: 6rem;
+        margin-top: -3rem;
+        align-items: center;
+        background-color: #e4d3df;
+        justify-content: center;
+    }
+    .page6-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page6-h4{
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 47rem;
+        padding-top: 2rem;
+    }
+    .page6-p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        padding-top: 1.5rem;
+    }
+        .page7{
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page7-content{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8rem;
+    }
+    .page7-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .page7-h3{
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        width: 34rem;
+    }
+    .page7-p{
+        font-family: 'Rubik', sans-serif;
+        width: 25rem;
+        line-height: 1.5;
+        margin-top: -3rem;
+    }
+    .page7-boxes{
+        display: flex;
+        gap: 2rem;
+    }
+    .box img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .box{
+        width: 12rem;
+        height: 6rem;
+        border-radius: 0.25rem;
+        border: 0.1rem solid #e4d3df;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .box-h4{
+        color: #4b3049;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+    }
+    .page9{
+        width: 100vw;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .page9-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .page9-LHS{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .list-1 ul{
+        text-decoration: none;
+        display: flex;
+        list-style-type: none;
+        gap: 2rem;
+    }
+    .lsit-1 ul li{
+        position: relative;
+    }
+    .list-1 li a{
+        font-size: 1.1rem;
+        font-family: 'Rubik', sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        color: #8a7789;
+        transition: ease-out 300ms;
+    }
+    .list-1 ul li a:hover{
+        color: #e4d3df;
+        text-decoration: none;
+    }
+    .page9-RHS{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.25rem;
+    }
+    .circle-2{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #4b3049;
+        cursor: pointer;
+    }
+    .circle-2:hover{
+        background-color: #e4d3df;
+    }
+    .page9 img{
+        cursor: pointer;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    .header{
+        display: flex;
+        min-height: 10vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 2rem;
+        /* position: fixed; */
+        background-color: #ffffff;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-family: 'Rubik', sans-serif;
+    }
+    .list ul{
+        text-decoration: none;
+        display: none;
+        list-style-type: none;
+        gap: 2rem;
+    }
+    .lsit ul li{
+        position: relative;
+    }
+    .list li a{
+        font-size: 1rem;
+        font-family: 'Rubik', sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        color: #8a7789;
+        transition: ease-out 300ms;
+    }
+    .list ul li a:hover{
+        text-decoration: none;
+    }
+    .dropdown{
+        display: none;
+        margin-top: 3rem;
+    }
+    .list ul li:hover .dropdown{
+        display: block;
+        position: absolute; 
+        background-color: #b08dad;
+        transition: ease 0.3ms;
+    }
+    .list ul li:hover .dropdown ul{
+        display: block;
+        margin: 0.625rem;
+    }
+    .list ul li:hover .dropdown ul li{
+        width: 8.5rem;
+        padding: 0.625rem;
+    }
+    .dropdown ul li a{
+        color: white;
+        font-size: 0.9rem;
+        text-wrap: nowrap;
+        font-family: 'Rubik', sans-serif;
+    }
+    .icons{
+        display: none;
+        gap: 2rem;
+        cursor: pointer;
+    }
+    .page1{
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* padding-bottom: 8rem;
+        gap: 2rem; */
+    }
+    .page1-con{
+        display: none;
+        width: 20rem;
+        height: 40rem;
+        left: -10rem;
+        position: absolute;
+        margin-top: 10rem;
+        background-color: #b08dad;
+    }
+    .page1-img{
+        width: 22rem;
+        height: 15rem;
+        margin-left: -2rem;
+    
+    }
+    .banner{
+        position: absolute;
+        bottom: 65%;
+        margin-left: 16rem;
+    }
+    .page1-text{
+        position: relative;
+        margin-left: 4rem;
+    }
+    .page1-text-h1{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        color: #4b3049;
+        width: 25rem;
+    }
+    .page1-text-p{
+        width: 25rem;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1rem;
+        color: #b08dad;
+    }
+    .page1-btn{
+        padding: 0.7rem 1.5rem;
+        margin-top: 2rem;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: #b08dad;
+        font-family: 'Rubik', sans-serif;
+        cursor: pointer;
+        font-size: 0.7rem;
+    }
+    .page1-btn:hover{
+        background-color: #fff;
+        color: #b08dad;
+        border: 0.1rem solid #b08dad;
+        transition: ease-out 0.3s;
+    }
+}
